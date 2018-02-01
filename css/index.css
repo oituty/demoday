@@ -1,0 +1,75 @@
+html, body{
+    margin: 0;
+}
+
+            /* HEADER */
+
+header{
+    color: white;
+    position: relative;
+    background-image: url("../img/bkg-index2.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 43vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+img{
+    margin-top: 13vw;
+    margin-bottom: 2vw;
+    width: 65vw;
+    height: auto;
+    background-size: cover;
+}
+
+            /* FOOTER */
+
+footer{
+    width: 100%;
+    height: 11vw;
+    background-color: brown;
+    text-align: center;
+}
+
+h1{
+    padding: 3.5vw;
+    color: white;
+    font-size: 3vw;
+    font-family: 'Bree Serif', serif;
+
+}
+
+
+.linha{
+    width: 100%;
+    height: 2.5vw;
+    background-color: brown;
+}
+
+            /* BOTÃO CENTRAL */
+
+.btn{
+	border-radius: 50px;
+	color: brown;
+    height: auto;
+	font-size: 2vw;
+	font-weight: bold;
+    text-transform: uppercase;
+    border-color: brown;
+    background-color: white;
+    justify-content: center;
+    border-width: 0.2vw;
+
+}
+
+.btn:hover{
+	background-color: brown;
+    color: white;
+    border-color:brown;
+    font-size: 2.2vw;
+}
+
+
+
+

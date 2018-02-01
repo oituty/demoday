@@ -1,0 +1,46 @@
+html, body{
+    margin: 0;
+}
+
+header{
+    color: white;
+    position: relative;
+    background-image: url("../img/bkg-s1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vw;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.logos1{
+    margin-top: 5vw;
+    margin-bottom: 2vw;
+    width: 35vw;
+    height: auto;
+    background-size: cover;
+}
+
+.btn{
+	border-radius: 50px;
+	color: brown;
+    height: auto;
+	font-size: 1.5vw;
+	font-weight: bold;
+    text-transform: uppercase;
+    border-color: brown;
+    background-color: white;
+    float: left;
+    border-width: 0.2vw;
+    margin-top: 60vw;
+
+}
+
+.btn:hover{
+	background-color: brown;
+    color: white;
+    border-color:brown;
+    font-size: 1.7vw;
+}
