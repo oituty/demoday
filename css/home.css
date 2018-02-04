@@ -3,56 +3,158 @@ html, body{
     padding: 0;
 }
 
-.linha{
-    width: 100%;
-    height: 0.8em;
-    background-color: brown;
-}
 
+            /* HEADER */
+                            /* CONTAINER COM LOGO, CARROSSEL DE FRASES E SETA*/
 .inicio{
     width: 100%;
     height: 41em;
-    background-color: rgba(241, 240, 240, 0.966);
+    background-color: rgb(253, 243, 243);
     text-align: center;
     justify-content: center;
 }
-
+                            /* LOGO */
 .logoinicio{
     width: 29%;
     height: auto;
     margin-top: 17em;
     margin-bottom: 3.5%;
 }
-
-
+                            /* FRASES DO CARROSSEL */
 .subtituloinicio{
     font-size: 1.1vw;
     margin-bottom: 8%;
     display: none;
 }
+
 .ativa{
   display: block;
 }
-
+                            /* SETA E CONTROLE DE MOVIMENTO */
 .seta{
     width: 4.5%;
-    -webkit-animation:spin 1s linear infinite;
-    -moz-animation:spin 2s linear infinite;
-    animation:spin 1s linear infinite;
+    -webkit-animation:seta 0.7s alternate infinite;
+    -moz-animation:seta 0.7s alternate infinite;
+    animation:seta 0.7s alternate infinite;
 }
 
+@-moz-keyframes seta { 100% { -moz-transform: translate(0, 18px); } }
+@-webkit-keyframes seta { 100% { -webkit-transform: translate(0, 18px); } }
+@keyframes seta { 100% { -webkit-transform: translate(0, 18px); transform:translate(0, 18px); } }
+
+                        /* AUMENTO DE TAMANHO AO PASSAR O MOUSE */
 .seta:hover{
     width: 5.5%;
 }
 
-@-moz-keyframes spin { 100% { -moz-transform: translate(0, 18px); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: translate(0, 18px); } }
-@keyframes spin { 100% { -webkit-transform: translate(0, 18px); transform:translate(0, 18px); } }
+                        /* ESPAÇO ENTRE HEADER E SECTION INFO */
 
-
-#cadastro{
+.espacoinfo{
     height: 5em;
-    background-color: rgba(241, 240, 240, 0.966);
+    background-color: rgb(253, 243, 243);
+}
+
+            /* SECTION INFO */
+
+.info{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: black;
+}
+
+            /* DIV PERGUNTA SOBRE VOLUNTARIOS */
+.infoacoes{
+    width: 49.5%;
+    height: 41em;
+    position: relative;
+    background-color: rgb(167, 81, 81);
+    text-align: center;
+    overflow: hidden;
+}
+
+.legeninfo{
+    transform: rotate(-10deg);
+    margin-top: 4.5em;
+    font-size: 3em;
+    font-family: 'Fredoka One', cursive;
+    color: brown;
+    text-shadow: 0.1em 0.1em 0.2em antiquewhite;
+}
+
+            /* DIV PERSONAGEM E CONTROLE DE MOVIMENTO */
+.infoprocurahomem{
+    width: 49.5%;
+    height: 41em;
+    position: relative;
+    background-color: rgb(167, 81, 81);
+    text-align: center;
+}
+
+.corpohomem{
+    height: 65%;
+    width: auto;
+    margin-top: 8.5em;
+    position: relative;
+    -webkit-animation:resposta 0.7s alternate infinite;
+    -moz-animation:resposta 0.7s alternate infinite;
+    animation:resposta 0.7s alternate infinite;
+}
+
+@-moz-keyframes resposta { 100% { -moz-transform: translate(13px); } }
+@-webkit-keyframes resposta { 100% { -webkit-transform: translate(13px); } }
+@keyframes resposta { 100% { -webkit-transform: translate(13px); transform:translate(13px); } }
+
+            /* DIV ESCONDIDA, RESPOSTA DA PERGUNTA E CONTROLE DE ANIMAÇÃO*/
+.resposta{
+    width: 1%;
+    height: 41em;
+    position: relative;
+    background-color: brown;
+    text-align: center;
+    /* -webkit-animation:resposta 0.7s alternate infinite;
+    -moz-animation:resposta 0.7s alternate infinite;
+    animation:resposta 0.7s alternate infinite; */
+    color: black;
+    opacity: 0;
+    font-size: 2px;
+
+}
+
+/* @-moz-keyframes resposta { 100% { -moz-transform: translate(13px); } }
+@-webkit-keyframes resposta { 100% { -webkit-transform: translate(13px); } }
+@keyframes resposta { 100% { -webkit-transform: translate(13px); transform:translate(13px); } } */
+
+
+            /* PARAR MOVIMENTAÇÃO AO PASSAR O MOUSE E EXIBIR CONTEUDO*/
+.resposta:hover{
+    width: 50%;
+    background-color: rgb(243, 226, 226);
+    /* -webkit-animation:resposta 0.7s alternate 1;
+    -moz-animation:resposta 0.7s alternate 1;
+    animation:resposta 0.7s alternate 1; */
+    opacity: 1;
+    font-size: 1em;
+}
+
+.logorespos{
+    height: 13%;
+    width: auto;
+    margin-top: 3em;
+}
+
+.requisitos{
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+                 /* ESPAÇO ENTRE A SECTION INFO E A SECTION CADASTRO*/
+
+.espacocadas{
+    width: 100%;
+    height: 5em;
+    background-color: rgb(253, 243, 243);
 }
 
 .cadastro{
@@ -105,7 +207,7 @@ html, body{
 	border-radius: 20em;
 	color: brown;
     height: auto;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	font-weight: bold;
     text-transform: uppercase;
     border-color: brown;
@@ -120,7 +222,7 @@ html, body{
 	background-color: brown;
     color: white;
     border-color:brown;
-    font-size: 0.9em;
+    font-size: 0.75em;
 }
 
 .ideia{
@@ -131,10 +233,6 @@ html, body{
     height: auto;
 }
 
-.contavideo{
-    background-color: black;
-}
-
 
 .tituloideia{
     margin: 1em;
@@ -143,15 +241,12 @@ html, body{
     font-family: 'Bree Serif', serif;
 }
 
-.row{
-    text-align: center;
-    justify-content: center;
-}
+
 
 .divseta{
     width: 100%;
     height: 3em;
-    background-color:rgba(241, 240, 240, 0.966);
+    background-color:rgb(253, 243, 243);
     text-align: center;
 }
 
@@ -221,6 +316,27 @@ html, body{
     .cadastro {
         display: inline;
     }
+
+    .infoprocurahomem{
+        display: none;
+    }
+
+    .resposta{
+        display: none;
+    }
+
+    .infoacoes{
+        width: 100%;
+    }
+
+    .infoprocura{
+        width: 100%;
+        height: 41em;
+        position: relative;
+        background-color: rgb(175, 68, 68);
+    }
+
+
 
     .inicio{
         height: 38em;
