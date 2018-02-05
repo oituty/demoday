@@ -1,14 +1,24 @@
 html, body{
     margin: 0;
     padding: 0;
+    background-image: url(../img/class.jpg);
+    background-repeat: no-repeat;
+    background-position: -37.5em -6em;
+    background-attachment: fixed;
 }
 
 
             /* HEADER */
                             /* CONTAINER COM LOGO, CARROSSEL DE FRASES E SETA*/
+
+.seila{
+    width: 100%;
+    height: 20em;
+}
+
 .inicio{
     width: 100%;
-    height: 41em;
+    height: 22em;
     background-color: rgb(253, 243, 243);
     text-align: center;
     justify-content: center;
@@ -17,14 +27,17 @@ html, body{
 .logoinicio{
     width: 29%;
     height: auto;
-    margin-top: 17em;
+    margin-top: 4em;
     margin-bottom: 3.5%;
 }
                             /* FRASES DO CARROSSEL */
+
 .subtituloinicio{
+    display: none;
+}
+.textocarro{
     font-size: 1.1vw;
     margin-bottom: 8%;
-    display: none;
 }
 
 .ativa{
@@ -52,6 +65,7 @@ html, body{
 .espacoinfo{
     height: 5em;
     background-color: rgb(253, 243, 243);
+    background-position: 0 -40em;
 }
 
             /* SECTION INFO */
@@ -62,6 +76,11 @@ html, body{
     padding: 0;
     justify-content: center;
     background-color: black;
+    background-image: url(../img/passemouse.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto 50%;
+    text-align: center;
 }
 
             /* DIV PERGUNTA SOBRE VOLUNTARIOS */
@@ -69,56 +88,94 @@ html, body{
     width: 49.5%;
     height: 41em;
     position: relative;
-    background-color: rgb(167, 81, 81);
+    background-image: url(../img/bkgpreto.jpg);
     text-align: center;
     overflow: hidden;
 }
 
 .legeninfo{
-    transform: rotate(-10deg);
-    margin-top: 4.5em;
-    font-size: 3em;
+    margin-top: 3.2em;
+    font-size: 3.5vw;
     font-family: 'Fredoka One', cursive;
     color: brown;
     text-shadow: 0.1em 0.1em 0.2em antiquewhite;
+    -webkit-animation:frase 0.7s alternate infinite;
+    -moz-animation:frase 0.7s alternate infinite;
+    animation:frase 0.7s alternate infinite;
 }
+
+@-moz-keyframes frase { 100% { -moz-transform: translate(0, 3px); } }
+@-webkit-keyframes frase { 100% { -webkit-transform: translate(0, 3px); } }
+@keyframes frase { 100% { -webkit-transform: translate(0, 3px); transform:translate(0, 3px); } }
 
             /* DIV PERSONAGEM E CONTROLE DE MOVIMENTO */
 .infoprocurahomem{
     width: 49.5%;
     height: 41em;
     position: relative;
-    background-color: rgb(167, 81, 81);
+    background-image: url(../img/bkgpergu.jpg);
+    background-repeat: no-repeat;
     text-align: center;
+    
 }
+
+/* .mao{
+    transform: rotate(5deg);
+    width: 85px;
+    margin-top: 9.8em;
+    position: relative;
+    margin-left: 18.1em;
+    /* -webkit-animation:mao 0.7s alternate infinite;
+    -moz-animation:mao 0.7s alternate infinite;
+    animation:mao 0.7s alternate infinite; 
+}*/
+
+/* @-moz-keyframes mao { 100% { -moz-transform: rotate(-1deg); } }
+@-webkit-keyframes mao { 100% { -webkit-transform: rotate(-1deg); } }
+@keyframes mao { 100% { -webkit-transform: rotate(-1deg); transform:rotate(-1deg); } } */
+
+/* .pe{
+    width: 110px;
+    margin-top: 17.5em;
+    margin-left: 20em;
+    /* -webkit-animation:pe 0.7s alternate infinite;
+    -moz-animation:pe 0.7s alternate infinite;
+    animation:pe 0.7s alternate infinite;
+    position: relative;
+ } */
+
+/* @-moz-keyframes pe { 100% { -moz-transform: translate(0, 5px); } }
+@-webkit-keyframes pe { 100% { -webkit-transform: translate(0, 5px); } }
+@keyframes pe { 100% { -webkit-transform: translate(0, 5px); transform:translate(0, 5px); } } */ 
 
 .corpohomem{
     height: 65%;
     width: auto;
     margin-top: 8.5em;
     position: relative;
-    -webkit-animation:resposta 0.7s alternate infinite;
-    -moz-animation:resposta 0.7s alternate infinite;
-    animation:resposta 0.7s alternate infinite;
+    -webkit-animation:corpo 0.7s alternate infinite;
+    -moz-animation:corpo 0.7s alternate infinite;
+    animation:corpo 0.7s alternate infinite;
 }
 
-@-moz-keyframes resposta { 100% { -moz-transform: translate(13px); } }
-@-webkit-keyframes resposta { 100% { -webkit-transform: translate(13px); } }
-@keyframes resposta { 100% { -webkit-transform: translate(13px); transform:translate(13px); } }
+@-moz-keyframes corpo { 100% { -moz-transform: translate(0, 10px); } }
+@-webkit-keyframes corpo { 100% { -webkit-transform: translate(0, 10px); } }
+@keyframes corpo { 100% { -webkit-transform: translate(0, 10px); transform:translate(0, 10px); } }
 
-            /* DIV ESCONDIDA, RESPOSTA DA PERGUNTA E CONTROLE DE ANIMAÇÃO*/
+           /* DIV PARA PASSAR O MOUSE, AO PASSAR APARECE O CONTEUDO */
 .resposta{
-    width: 1%;
+    width: 1.5%;
     height: 41em;
     position: relative;
     background-color: brown;
     text-align: center;
+    margin-top: 12%;
     /* -webkit-animation:resposta 0.7s alternate infinite;
     -moz-animation:resposta 0.7s alternate infinite;
     animation:resposta 0.7s alternate infinite; */
     color: black;
     opacity: 0;
-    font-size: 2px;
+    font-size: 3.4px;
 
 }
 
@@ -127,26 +184,66 @@ html, body{
 @keyframes resposta { 100% { -webkit-transform: translate(13px); transform:translate(13px); } } */
 
 
-            /* PARAR MOVIMENTAÇÃO AO PASSAR O MOUSE E EXIBIR CONTEUDO*/
+            /* DIV ESCONDIDA, RESPOSTA DA PERGUNTA E CONTROLE DE ANIMAÇÃO*/ /* PARAR MOVIMENTAÇÃO AO PASSAR O MOUSE E EXIBIR CONTEUDO*/  
 .resposta:hover{
     width: 50%;
-    background-color: rgb(243, 226, 226);
+    background-color: rgb(253, 237, 237);
     /* -webkit-animation:resposta 0.7s alternate 1;
     -moz-animation:resposta 0.7s alternate 1;
     animation:resposta 0.7s alternate 1; */
     opacity: 1;
     font-size: 1em;
+    margin-top: 0;
 }
 
 .logorespos{
-    height: 13%;
+    height: 11%;
     width: auto;
-    margin-top: 3em;
+    margin-top: 1.5em;
 }
 
-.requisitos{
+.blockrequi{
+    background-color: rgb(131, 53, 53);
+    height: 8em;
+}
+
+.requisitos1{
     font-size: 1em;
     margin-top: 2em;
+    margin-bottom: 5%;
+    color: rgb(226, 199, 199);
+    padding: 1.1em;
+    font-family: 'Arvo', serif;
+}
+
+.requisitos2{
+    font-size: 1em;
+    margin-top: 2em;
+    margin-bottom: 5%;
+    color: brown;
+    font-family: 'Arvo', serif;
+}
+
+.btn-cadastro1{
+	border-radius: 20em;
+	color: brown;
+    height: auto;
+	font-size: 1em;
+	font-weight: bold;
+    text-transform: uppercase;
+    border-color: brown;
+    background-color: white;
+    justify-content: center;
+    border-width: 0.2em;
+    overflow: hidden;
+    margin-top: 1.7em;
+}
+
+.btn-cadastro1:hover{
+	background-color: brown;
+    color: white;
+    border-color:brown;
+    font-size: 1.1em;
 }
 
                  /* ESPAÇO ENTRE A SECTION INFO E A SECTION CADASTRO*/
@@ -225,31 +322,181 @@ html, body{
     font-size: 0.75em;
 }
 
-.ideia{
-    padding: 0;
-    text-align: center;
-    background-color: brown;
-    width: 100%;
-    height: auto;
-}
-
-
-.tituloideia{
-    margin: 1em;
-    color: white;
-    font-size: 3em;
-    font-family: 'Bree Serif', serif;
-}
-
-
-
 .divseta{
     width: 100%;
     height: 3em;
-    background-color:rgb(253, 243, 243);
+    background-color: rgb(253, 243, 243);
     text-align: center;
 }
 
+                    /* ONGS */
+
+.blocosub{
+    width: 100%;
+    height: 3em;
+    background-image: url(../img/bkgpergu.jpg)
+}
+
+.ogs{
+    display: flex;
+    padding: 0;
+    background-image: url(../img/bkgpergu.jpg);
+}
+
+.infoongs{
+    background-image: url(../img/bkgpreto.jpg);
+    width: 50%;
+    height: 40em;
+    text-align: center;
+}
+
+.teste{
+    font-size: 2em;
+    margin: 3em;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em brown;
+    margin-top: 4.5em;
+
+}
+
+.carroongs{
+    background-image: url(../img/bkgpergu.jpg);
+    width: 50%;
+    height: 40em;
+    display: flex;
+}
+
+.card{
+    background-image: url(../img/bkgpergu.jpg);
+    color: rgb(253, 243, 243);
+    text-align: center;
+    margin: 0;
+    border-radius: 0;
+    font-size: 1em;
+    border: 0;
+    margin: 1px;
+}
+/* 
+.gifsequipe{
+    width: 100%;
+    height: 6em;
+    display: flex;
+}
+.espaeq1{
+    width: 25%;
+    height: 6em;
+    background-image: url(../img/tech4.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: -30em -25em;
+}
+
+.espaeq2{
+    width: 50%;
+    height: 6em;
+    background-image: url(../img/tech4.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 2em -20em;
+}
+
+
+.espaeq4{
+    width: 25%;
+    height: 6em;
+    background-image: url(../img/tech4.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 30em -20em;
+} */
+
+.bkgeq{
+    height: 18em;
+    width: 100%;
+    background-image: url(../img/te.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -20em;
+}
+
+.equipe{
+    width: 100%;
+    height: 35em;
+    background-image: url(../img/bkgpreto.jpg);
+    text-align: center;
+    display: flex;
+}
+
+.mapa{
+    width: 50%;
+
+}
+
+.mapa1{
+    width: 90%;
+    margin: 3.5em;
+}
+
+.dados{
+    width: 50%;
+}
+
+.contateN{
+    font-size: 2em;
+    margin-top: 4em;
+    padding-bottom: 0.9em;
+    color: white;
+    text-shadow: 0.1em 0.1em rgb(201, 115, 115);
+}
+.logocont{
+    width: 40%;
+    padding-bottom: 2em;
+}
+
+
+.dads{
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0.1em 0.1em rgb(201, 115, 115);
+}
+
+.row{
+    display: inline-flex;
+}
+
+/* .carrossel{
+	width: 100%;
+	height: 1000px;
+}
+
+.container-carro{
+	width: 100%;
+	height: 49.8%;
+}
+
+.new-size{
+	margin-top: 0;
+	position:center;
+	width:100%;
+	height:500px;
+
+} */
+
+
+footer{
+    height: 7.5em;
+    width: 100%;
+    background-image: url(../img/bkgpergu.jpg);
+    text-align: center;
+}
+
+.tag{
+    font-size: 2.5em;
+    color: white;
+    padding-top: 1em;
+}
 
 @media screen and (max-width: 1450px) {
 
