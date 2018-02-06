@@ -1,0 +1,683 @@
+html, body{
+    margin: 0;
+    padding: 0; 
+    background-color:white;
+}
+
+
+            /* HEADER */
+                            /* CONTAINER COM LOGO, CARROSSEL DE FRASES E SETA*/
+
+.imgtop{
+    
+    height: 22em;
+    width: 100%;
+    background: url(../img/ong3.jpg);
+    background-repeat: no-repeat;
+    background-position: center -20em;;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+   
+
+    /* height: 18em;
+    width: 100%;
+    background: url(../img/te.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden; */
+}
+
+.navbar-nav{
+    display: inline-block;
+}
+
+.tagnav{
+    font-size: 1em;
+}
+.navbar{
+    background-color: rgb(100, 35, 35);
+    border: 0;
+    border-radius: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    height: 5em;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    height: 5em;
+    opacity: 0.8;
+}
+
+.affix + .seila {
+    padding-top: 70px;
+}
+
+.navbar-inverse{
+    margin: 0;
+}
+
+
+.inicio{
+    width: 100%;
+    height: 20em;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+                            /* LOGO */
+.logoinicio{
+    width: 25%;
+    height: auto;
+    margin-bottom: 0.5%;
+}
+
+.teste{
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(43, 41, 41);
+    text-shadow: 0 0 0.1em brown;
+    margin-top: 0.5em;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.subtituloinicio{
+    width: 40em;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+                            /* FRASES DO CARROSSEL */
+/* 
+.subtituloinicio{
+    display: none;
+}
+.textocarro{
+    font-size: 1.3vw;
+    margin-bottom: 8%;
+    text-shadow: 0em 0em 0.1em rgb(138, 57, 57);
+    color: rgb(63, 57, 57);
+}
+
+.ativa{
+  display: block;
+} */
+                            /* SETA E CONTROLE DE MOVIMENTO */
+.seta{
+    width: 4%;
+    -webkit-animation:seta 0.7s alternate infinite;
+    -moz-animation:seta 0.7s alternate infinite;
+    animation:seta 0.7s alternate infinite;
+}
+
+@-moz-keyframes seta { 100% { -moz-transform: translate(0, 18px); } }
+@-webkit-keyframes seta { 100% { -webkit-transform: translate(0, 18px); } }
+@keyframes seta { 100% { -webkit-transform: translate(0, 18px); transform:translate(0, 18px); } }
+
+                        /* AUMENTO DE TAMANHO AO PASSAR O MOUSE */
+.seta:hover{
+    width: 5.5%;
+}
+
+.divseta{
+    width: 100%;
+    height: 3em;
+    background-color: white;
+    text-align: center;
+}
+
+                        /* ESPAÇO ENTRE HEADER E SECTION INFO */
+
+.espacoinfo{
+    height: 5em;
+    background-color: white;
+    background-position: 0 -40em;
+}
+
+            /* SECTION INFO */
+
+.info{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: black;
+    background-image: url(../img/passemouse.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto 50%;
+    text-align: center;
+}
+
+            /* DIV PERGUNTA SOBRE VOLUNTARIOS */
+.infoacoes{
+    width: 49.5%;
+    height: 41em;
+    position: relative;
+    background-image: url(../img/bkgpreto.jpg);
+    text-align: center;
+    overflow: hidden;
+}
+
+.legeninfo{
+    margin-top: 3em;
+    font-size: 3.5vw;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(236, 223, 223);
+    text-shadow: 0.1em 0.1em brown;
+    -webkit-animation:frase 0.7s alternate infinite;
+    -moz-animation:frase 0.7s alternate infinite;
+    animation:frase 0.7s alternate infinite;
+}
+
+@-moz-keyframes frase { 100% { -moz-transform: translate(0, 3px); } }
+@-webkit-keyframes frase { 100% { -webkit-transform: translate(0, 3px); } }
+@keyframes frase { 100% { -webkit-transform: translate(0, 3px); transform:translate(0, 3px); } }
+
+            /* DIV PERSONAGEM E CONTROLE DE MOVIMENTO */
+.infoprocurahomem{
+    width: 49.5%;
+    height: 41em;
+    position: relative;
+    background-image: url(../img/bkgpergu.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+/* .mao{
+    transform: rotate(5deg);
+    width: 85px;
+    margin-top: 9.8em;
+    position: relative;
+    margin-left: 18.1em;
+    /* -webkit-animation:mao 0.7s alternate infinite;
+    -moz-animation:mao 0.7s alternate infinite;
+    animation:mao 0.7s alternate infinite; 
+}*/
+
+/* @-moz-keyframes mao { 100% { -moz-transform: rotate(-1deg); } }
+@-webkit-keyframes mao { 100% { -webkit-transform: rotate(-1deg); } }
+@keyframes mao { 100% { -webkit-transform: rotate(-1deg); transform:rotate(-1deg); } } */
+
+/* .pe{
+    width: 110px;
+    margin-top: 17.5em;
+    margin-left: 20em;
+    /* -webkit-animation:pe 0.7s alternate infinite;
+    -moz-animation:pe 0.7s alternate infinite;
+    animation:pe 0.7s alternate infinite;
+    position: relative;
+ } */
+
+/* @-moz-keyframes pe { 100% { -moz-transform: translate(0, 5px); } }
+@-webkit-keyframes pe { 100% { -webkit-transform: translate(0, 5px); } }
+@keyframes pe { 100% { -webkit-transform: translate(0, 5px); transform:translate(0, 5px); } } */ 
+
+/* .corpohomem{
+    height: 65%;
+    width: auto;
+    margin-top: 8.5em;
+    position: relative;
+    overflow: hidden;
+    -webkit-animation:corpo 0.7s alternate infinite;
+    -moz-animation:corpo 0.7s alternate infinite;
+    animation:corpo 0.7s alternate infinite;
+}
+
+@-moz-keyframes corpo { 100% { -moz-transform: translate(0, 10px); } }
+@-webkit-keyframes corpo { 100% { -webkit-transform: translate(0, 10px); } }
+@keyframes corpo { 100% { -webkit-transform: translate(0, 10px); transform:translate(0, 10px); } } */
+
+           /* DIV PARA PASSAR O MOUSE, AO PASSAR APARECE O CONTEUDO */
+.resposta{
+    width: 1.5%;
+    height: 41em;
+    position: relative;
+    background-color: brown;
+    text-align: center;
+    margin-top: 10%;
+    /* -webkit-animation:resposta 0.7s alternate infinite;
+    -moz-animation:resposta 0.7s alternate infinite;
+    animation:resposta 0.7s alternate infinite; */
+    color: black;
+    opacity: 0;
+    font-size: 0;
+
+}
+
+/* @-moz-keyframes resposta { 100% { -moz-transform: translate(13px); } }
+@-webkit-keyframes resposta { 100% { -webkit-transform: translate(13px); } }
+@keyframes resposta { 100% { -webkit-transform: translate(13px); transform:translate(13px); } } */
+
+
+            /* DIV ESCONDIDA, RESPOSTA DA PERGUNTA E CONTROLE DE ANIMAÇÃO*/ /* PARAR MOVIMENTAÇÃO AO PASSAR O MOUSE E EXIBIR CONTEUDO*/  
+.resposta:hover{
+    width: 60%;
+    background-color: rgb(253, 237, 237);
+    /* -webkit-animation:resposta 0.7s alternate 1;
+    -moz-animation:resposta 0.7s alternate 1;
+    animation:resposta 0.7s alternate 1; */
+    opacity: 1;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.logorespos{
+    height: 11%;
+    width: auto;
+    margin-top: 4.5%;
+}
+
+.blockrequi{
+    background-color: rgb(131, 53, 53);
+    height: 8vw;
+}
+
+.requisitos1{
+    font-size: 1em;
+    margin-top: 2em;
+    margin-bottom: 5%;
+    color: rgb(226, 199, 199);
+    
+    font-family: 'Arvo', serif;
+}
+
+.requisitos2{
+    font-size: 1em;
+    margin-top: 2em;
+    margin-bottom: 5%;
+    color: brown;
+    font-family: 'Arvo', serif;
+}
+
+.btn-cadastro1{
+	border-radius: 20em;
+	color: brown;
+    height: auto;
+	font-size: 1vw;
+	font-weight: bold;
+    text-transform: uppercase;
+    border-color: brown;
+    background-color: white;
+    justify-content: center;
+    border-width: 0.2em;
+    overflow: hidden;
+}
+
+.btn-cadastro1:hover{
+	background-color: brown;
+    color: white;
+    border-color:brown;
+    font-size: 1.1vw;
+}
+
+                 /* ESPAÇO ENTRE A SECTION INFO E A SECTION CADASTRO*/
+
+.espacocadas{
+    width: 100%;
+    height: 5em;
+    background-color: white;
+}
+
+.cadastro{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.cadasvolun{
+    width: 50%;
+    height: 41em;
+    background-image: url(../img/bkgvolun.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+}
+
+.cadasong{
+    width: 50%;
+    height: 41em;
+    background-image: url(../img/bkgong.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+    
+}
+
+.infoong{
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+    font-size: 1.2em;
+}
+
+.infovolun{
+    float: left;
+    margin-top: 5%;
+    margin-left: 1em;
+    font-size: 1.2em;
+
+}
+
+.nome{
+    font-size: 1.5em;
+    color: brown;
+}
+
+.btn-cadastro{
+	border-radius: 20em;
+	color: brown;
+    height: auto;
+	font-size: 0.7em;
+	font-weight: bold;
+    text-transform: uppercase;
+    border-color: brown;
+    background-color: white;
+    justify-content: center;
+    border-width: 0.2em;
+    overflow: hidden;
+
+}
+
+.btn-cadastro:hover{
+	background-color: brown;
+    color: white;
+    border-color:brown;
+    font-size: 0.75em;
+}
+
+                    /* ONGS */
+
+.blocosub{
+    width: 100%;
+    height: 3em;
+    background-image: url(../img/bkgpergu.jpg)
+}
+
+.ogs{
+    display: flex;
+    padding: 0;
+    background-image: url(../img/bkgpergu.jpg);
+}
+
+.infoongs{
+    background-image: url(../img/bkgpreto.jpg);
+    width: 50%;
+    height: 40em;
+    text-align: center;
+}
+
+
+
+.carroongs{
+    background-image: url(../img/bkgpergu.jpg);
+    width: 50%;
+    height: 40em;
+    display: flex;
+}
+
+.card{
+    background-image: url(../img/bkgpergu.jpg);
+    color: rgb(253, 243, 243);
+    text-align: center;
+    margin: 0;
+    border-radius: 0;
+    font-size: 1em;
+    border: 0;
+    height: 40em;
+}
+
+
+.bkgeq{
+    height: 18em;
+    width: 100%;
+    background: url(../img/te.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center -22em;
+    position: relative;
+    overflow: hidden;
+}
+
+.equipe{
+    width: 100%;
+    height: 35em;
+    background-image: url(../img/bkgpreto.jpg);
+    text-align: center;
+    display: flex;
+}
+
+.mapa{
+    width: 50%;
+
+}
+
+.mapa1{
+    width: 90%;
+    margin: 3.5em;
+}
+
+.dados{
+    width: 50%;
+}
+
+.contateN{
+    font-size: 2em;
+    margin-top: 4em;
+    padding-bottom: 0.9em;
+    color: white;
+    text-shadow: 0.1em 0.1em rgb(201, 115, 115);
+}
+.logocont{
+    width: 40%;
+    padding-bottom: 2em;
+}
+
+
+.dads{
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0.1em 0.1em rgb(201, 115, 115);
+}
+
+.row{
+    display: inline-flex;
+}
+
+
+
+footer{
+    height: 7.5em;
+    width: 100%;
+    background-image: url(../img/bkgpergu.jpg);
+    text-align: center;
+}
+
+.tag{
+    font-size: 2.5em;
+    color: white;
+    padding-top: 1em;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 950px)
+{
+    .imgtop{
+        height: 15em;
+    }
+    .cadastro {
+        display: inline;
+    }
+
+    .info{
+        display: inline;
+    }
+
+    .infoprocurahomem{
+        width: 100%;
+        height: 20em;
+    }
+
+    .resposta{
+        display: none;
+    }
+
+    .infoacoes{
+        width: 100%;
+        height: 20em;
+    }
+
+    .cadasvolun{
+        width: 100%;
+        height: 20em;
+    }
+
+    .cadasong{
+        width: 100%;
+        height: 20em;
+    }
+
+    .ogs{
+        display: inline;
+    }
+
+    .bkgeq{
+        height: 10em;
+    }
+
+    .mapa{
+        display: none;
+    }
+
+    .dados{
+        width: 100%;
+    }
+
+    .infoongs{
+        width: 100%;
+        height: 20em;
+    }
+
+    .carroongs{
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width: 1450px) {
+
+    .seila{
+        height: 17em;
+    }
+
+    html, body{
+        background-position: -50.5em -7em;
+    }
+
+    .logoinicio{
+        width: 30%;
+        
+    }
+    .espacoinfo{
+    height: 2.3em;
+    }
+    
+    .subtituloinicio{
+        font-size: 1.9vw;
+        
+    }
+
+    .inicio{
+        height: 19em;
+    }
+
+    .infoacoes{
+        height: 37em;
+    }
+
+    .infoprocurahomem{
+        height: 37em;
+    }
+
+    .resposta{
+        height: 37em;
+    }
+
+    .btn-cadastro1{
+        font-size: 0.7em;
+    } */
+
+                        /* JA ESTAVA COMENTADO */
+
+    /* .blockrequi{
+        background-color: rgb(131, 53, 53);
+        height: 8em;
+    }
+    
+    .requisitos1{
+        font-size: 1em;
+        margin-top: 2em;
+        margin-bottom: 5%;
+        color: rgb(226, 199, 199);
+        padding: 1.1em;
+        font-family: 'Arvo', serif;
+    }
+    
+    .requisitos2{
+        font-size: 1em;
+        margin-top: 2em;
+        margin-bottom: 5%;
+        color: brown;
+        font-family: 'Arvo', serif;
+    } */
+                        /* JA ESTAVA COMENTADO */
+/* } */
+
+/* @media screen and (max-width: 1050px) {
+
+    
+    .inicio{
+        height: 17em;
+    }
+
+    .infovolun{
+        font-size: 1em;
+        margin-top: 15em;
+    }
+
+    .infoong{
+        font-size: 1em;
+        margin-top: 15em;
+     
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+     .inicio{
+        height: 16em;
+    }
+
+    .infovolun{
+        font-size: 1em;
+        margin-top: 15em;
+    }
+
