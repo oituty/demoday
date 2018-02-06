@@ -1,51 +1,124 @@
 html, body{
     margin: 0;
-    padding: 0;
-    background-image: url(../img/class.jpg);
-    background-repeat: no-repeat;
-    background-position: -37.5em -6em;
-    background-attachment: fixed;
+    padding: 0; 
+    background-color:white;
 }
 
 
             /* HEADER */
                             /* CONTAINER COM LOGO, CARROSSEL DE FRASES E SETA*/
 
-.seila{
+.imgtop{
+    
+    height: 22em;
     width: 100%;
-    height: 20em;
+    background: url(../img/ong3.jpg);
+    background-repeat: no-repeat;
+    background-position: center -20em;;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+   
+
+    /* height: 18em;
+    width: 100%;
+    background: url(../img/te.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden; */
 }
+
+.navbar-nav{
+    display: inline-block;
+}
+
+.tagnav{
+    font-size: 1em;
+}
+.navbar{
+    background-color: rgb(100, 35, 35);
+    border: 0;
+    border-radius: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    height: 5em;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    height: 5em;
+    opacity: 0.8;
+}
+
+.affix + .seila {
+    padding-top: 70px;
+}
+
+.navbar-inverse{
+    margin: 0;
+}
+
 
 .inicio{
     width: 100%;
-    height: 22em;
-    background-color: rgb(253, 243, 243);
+    height: 20em;
+    background-color: white;
     text-align: center;
     justify-content: center;
+    overflow: hidden;
 }
                             /* LOGO */
 .logoinicio{
-    width: 29%;
+    width: 25%;
     height: auto;
-    margin-top: 4em;
-    margin-bottom: 3.5%;
+    margin-bottom: 0.5%;
 }
-                            /* FRASES DO CARROSSEL */
 
+.teste{
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(43, 41, 41);
+    text-shadow: 0 0 0.1em brown;
+    margin-top: 0.5em;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.subtituloinicio{
+    width: 40em;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+                            /* FRASES DO CARROSSEL */
+/* 
 .subtituloinicio{
     display: none;
 }
 .textocarro{
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     margin-bottom: 8%;
+    text-shadow: 0em 0em 0.1em rgb(138, 57, 57);
+    color: rgb(63, 57, 57);
 }
 
 .ativa{
   display: block;
-}
+} */
                             /* SETA E CONTROLE DE MOVIMENTO */
 .seta{
-    width: 4.5%;
+    width: 4%;
     -webkit-animation:seta 0.7s alternate infinite;
     -moz-animation:seta 0.7s alternate infinite;
     animation:seta 0.7s alternate infinite;
@@ -60,11 +133,18 @@ html, body{
     width: 5.5%;
 }
 
+.divseta{
+    width: 100%;
+    height: 3em;
+    background-color: white;
+    text-align: center;
+}
+
                         /* ESPAÇO ENTRE HEADER E SECTION INFO */
 
 .espacoinfo{
     height: 5em;
-    background-color: rgb(253, 243, 243);
+    background-color: white;
     background-position: 0 -40em;
 }
 
@@ -94,11 +174,11 @@ html, body{
 }
 
 .legeninfo{
-    margin-top: 3.2em;
+    margin-top: 3em;
     font-size: 3.5vw;
     font-family: 'Fredoka One', cursive;
-    color: brown;
-    text-shadow: 0.1em 0.1em 0.2em antiquewhite;
+    color: rgb(236, 223, 223);
+    text-shadow: 0.1em 0.1em brown;
     -webkit-animation:frase 0.7s alternate infinite;
     -moz-animation:frase 0.7s alternate infinite;
     animation:frase 0.7s alternate infinite;
@@ -116,6 +196,7 @@ html, body{
     background-image: url(../img/bkgpergu.jpg);
     background-repeat: no-repeat;
     text-align: center;
+    overflow: hidden;
     
 }
 
@@ -148,11 +229,12 @@ html, body{
 @-webkit-keyframes pe { 100% { -webkit-transform: translate(0, 5px); } }
 @keyframes pe { 100% { -webkit-transform: translate(0, 5px); transform:translate(0, 5px); } } */ 
 
-.corpohomem{
+/* .corpohomem{
     height: 65%;
     width: auto;
     margin-top: 8.5em;
     position: relative;
+    overflow: hidden;
     -webkit-animation:corpo 0.7s alternate infinite;
     -moz-animation:corpo 0.7s alternate infinite;
     animation:corpo 0.7s alternate infinite;
@@ -160,7 +242,7 @@ html, body{
 
 @-moz-keyframes corpo { 100% { -moz-transform: translate(0, 10px); } }
 @-webkit-keyframes corpo { 100% { -webkit-transform: translate(0, 10px); } }
-@keyframes corpo { 100% { -webkit-transform: translate(0, 10px); transform:translate(0, 10px); } }
+@keyframes corpo { 100% { -webkit-transform: translate(0, 10px); transform:translate(0, 10px); } } */
 
            /* DIV PARA PASSAR O MOUSE, AO PASSAR APARECE O CONTEUDO */
 .resposta{
@@ -169,13 +251,13 @@ html, body{
     position: relative;
     background-color: brown;
     text-align: center;
-    margin-top: 12%;
+    margin-top: 10%;
     /* -webkit-animation:resposta 0.7s alternate infinite;
     -moz-animation:resposta 0.7s alternate infinite;
     animation:resposta 0.7s alternate infinite; */
     color: black;
     opacity: 0;
-    font-size: 3.4px;
+    font-size: 0;
 
 }
 
@@ -186,7 +268,7 @@ html, body{
 
             /* DIV ESCONDIDA, RESPOSTA DA PERGUNTA E CONTROLE DE ANIMAÇÃO*/ /* PARAR MOVIMENTAÇÃO AO PASSAR O MOUSE E EXIBIR CONTEUDO*/  
 .resposta:hover{
-    width: 50%;
+    width: 60%;
     background-color: rgb(253, 237, 237);
     /* -webkit-animation:resposta 0.7s alternate 1;
     -moz-animation:resposta 0.7s alternate 1;
@@ -199,12 +281,12 @@ html, body{
 .logorespos{
     height: 11%;
     width: auto;
-    margin-top: 1.5em;
+    margin-top: 4.5%;
 }
 
 .blockrequi{
     background-color: rgb(131, 53, 53);
-    height: 8em;
+    height: 8vw;
 }
 
 .requisitos1{
@@ -212,7 +294,7 @@ html, body{
     margin-top: 2em;
     margin-bottom: 5%;
     color: rgb(226, 199, 199);
-    padding: 1.1em;
+    
     font-family: 'Arvo', serif;
 }
 
@@ -228,7 +310,7 @@ html, body{
 	border-radius: 20em;
 	color: brown;
     height: auto;
-	font-size: 1em;
+	font-size: 1vw;
 	font-weight: bold;
     text-transform: uppercase;
     border-color: brown;
@@ -236,14 +318,13 @@ html, body{
     justify-content: center;
     border-width: 0.2em;
     overflow: hidden;
-    margin-top: 1.7em;
 }
 
 .btn-cadastro1:hover{
 	background-color: brown;
     color: white;
     border-color:brown;
-    font-size: 1.1em;
+    font-size: 1.1vw;
 }
 
                  /* ESPAÇO ENTRE A SECTION INFO E A SECTION CADASTRO*/
@@ -251,7 +332,7 @@ html, body{
 .espacocadas{
     width: 100%;
     height: 5em;
-    background-color: rgb(253, 243, 243);
+    background-color: white;
 }
 
 .cadastro{
@@ -322,13 +403,6 @@ html, body{
     font-size: 0.75em;
 }
 
-.divseta{
-    width: 100%;
-    height: 3em;
-    background-color: rgb(253, 243, 243);
-    text-align: center;
-}
-
                     /* ONGS */
 
 .blocosub{
@@ -350,15 +424,7 @@ html, body{
     text-align: center;
 }
 
-.teste{
-    font-size: 2em;
-    margin: 3em;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 0.1em 0.1em 0.2em brown;
-    margin-top: 4.5em;
 
-}
 
 .carroongs{
     background-image: url(../img/bkgpergu.jpg);
@@ -375,50 +441,20 @@ html, body{
     border-radius: 0;
     font-size: 1em;
     border: 0;
-    margin: 1px;
-}
-/* 
-.gifsequipe{
-    width: 100%;
-    height: 6em;
-    display: flex;
-}
-.espaeq1{
-    width: 25%;
-    height: 6em;
-    background-image: url(../img/tech4.gif);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: -30em -25em;
+    height: 40em;
 }
 
-.espaeq2{
-    width: 50%;
-    height: 6em;
-    background-image: url(../img/tech4.gif);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 2em -20em;
-}
-
-
-.espaeq4{
-    width: 25%;
-    height: 6em;
-    background-image: url(../img/tech4.gif);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 30em -20em;
-} */
 
 .bkgeq{
     height: 18em;
     width: 100%;
-    background-image: url(../img/te.jpg);
-    background-repeat: no-repeat;
+    background: url(../img/te.jpg);
+    background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 0 -20em;
+    background-position: center -22em;
+    position: relative;
+    overflow: hidden;
 }
 
 .equipe{
@@ -466,23 +502,6 @@ html, body{
     display: inline-flex;
 }
 
-/* .carrossel{
-	width: 100%;
-	height: 1000px;
-}
-
-.container-carro{
-	width: 100%;
-	height: 49.8%;
-}
-
-.new-size{
-	margin-top: 0;
-	position:center;
-	width:100%;
-	height:500px;
-
-} */
 
 
 footer{
@@ -496,30 +515,134 @@ footer{
     font-size: 2.5em;
     color: white;
     padding-top: 1em;
+    margin-top: 0;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 950px)
+{
+    .cadastro {
+        display: inline;
+    }
+
+    .info{
+        display: inline;
+    }
+
+    .infoprocurahomem{
+        width: 100%;
+    }
+
+    .resposta{
+        display: none;
+    }
+
+    .infoacoes{
+        width: 100%;
+    }
+
+    .cadasvolun{
+        width: 100%;
+    }
+
+    .cadasong{
+        width: 100%;
+    }
+
+    .ogs{
+        display: inline;
+    }
+
+    .mapa{
+        display: none;
+    }
+
+    .dados{
+        width: 100%;
+    }
+
+    .infoongs{
+        width: 100%;
+    }
+
+    .carroongs{
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width: 1450px) {
+
+    .seila{
+        height: 17em;
+    }
+
+    html, body{
+        background-position: -50.5em -7em;
+    }
 
     .logoinicio{
-        width: 42%;
+        width: 30%;
         
     }
-    
+    .espacoinfo{
+    height: 2.3em;
+    }
     
     .subtituloinicio{
-        font-size: 2.1vw;
+        font-size: 1.9vw;
         
     }
 
     .inicio{
-        height: 39.5em;
+        height: 19em;
     }
-}
 
-@media screen and (max-width: 1050px) {
+    .infoacoes{
+        height: 37em;
+    }
 
+    .infoprocurahomem{
+        height: 37em;
+    }
+
+    .resposta{
+        height: 37em;
+    }
+
+    .btn-cadastro1{
+        font-size: 0.7em;
+    } */
+
+                        /* JA ESTAVA COMENTADO */
+
+    /* .blockrequi{
+        background-color: rgb(131, 53, 53);
+        height: 8em;
+    }
+    
+    .requisitos1{
+        font-size: 1em;
+        margin-top: 2em;
+        margin-bottom: 5%;
+        color: rgb(226, 199, 199);
+        padding: 1.1em;
+        font-family: 'Arvo', serif;
+    }
+    
+    .requisitos2{
+        font-size: 1em;
+        margin-top: 2em;
+        margin-bottom: 5%;
+        color: brown;
+        font-family: 'Arvo', serif;
+    } */
+                        /* JA ESTAVA COMENTADO */
+/* } */
+
+/* @media screen and (max-width: 1050px) {
+
+    
     .inicio{
-        height: 39.5em;
+        height: 17em;
     }
 
     .infovolun{
@@ -538,7 +661,7 @@ footer{
 @media screen and (max-width: 990px) {
 
      .inicio{
-        height: 39.5em;
+        height: 16em;
     }
 
     .infovolun{
@@ -546,198 +669,3 @@ footer{
         margin-top: 15em;
     }
 
-    .infoong{
-        font-size: 1em;
-        margin-top: 15em;
-     
-    }
-
-    .seta{
-        width: 5%;
-    }
-
-}
-
-@media screen and (max-width: 900px)
-{
-    .cadastro {
-        display: inline;
-    }
-
-    .infoprocurahomem{
-        display: none;
-    }
-
-    .resposta{
-        display: none;
-    }
-
-    .infoacoes{
-        width: 100%;
-    }
-
-    .infoprocura{
-        width: 100%;
-        height: 41em;
-        position: relative;
-        background-color: rgb(175, 68, 68);
-    }
-
-
-
-    .inicio{
-        height: 38em;
-    }
-
-    .cadasvolun {
-        width: 100%;
-    }
-    
-    .cadasong {
-        width: 100%;
-    }
-
-    .infovolun{
-        font-size: 1.2em;
-        margin-top: 14em;
-    }
-
-    .infoong{
-        font-size: 1.2em;
-        margin-top: 14em;
-     
-    }
-}
-
-
-@media screen and (max-width: 800px) {
-
-    .logoinicio{
-        width: 55%;
-        margin-top: 17em;
-        
-    }
-
-    .seta{
-        width: 8%;
-    }
-
-    .inicio{
-        height: 38em;
-    }
-    
-    .subtituloinicio{
-        font-size: 2.4vw;
-        
-    }
-    
-    .infovolun{
-        font-size: 1.1em;
-        margin-top: 15em;
-    }
-
-    .infoong{
-        font-size: 1.1em;
-        margin-top: 15em;
-    }
-}
-
-@media screen and (max-width: 650px) {
-
-    .logoinicio{
-        width: 67%;
-        margin-top: 17em;
-        
-    }
-
-    .seta{
-        width: 9%;
-    }
-
-    .inicio{
-        height: 38em;
-    }
-    
-    .subtituloinicio{
-        font-size: 2.7vw;
-        
-    }
-    
-    .infovolun{
-        font-size: 1em;
-        margin-top: 15em;
-    }
-
-    .infoong{
-        font-size: 1em;
-        margin-top: 15em;
-    }
-    
-
-}
-
-@media screen and (max-width: 500px) {
-
-    .logoinicio{
-        width: 75%;
-        margin-top: 17em;
-        
-    }
-
-    .seta{
-        width: 10%;
-    }
-
-    .inicio{
-        height: 39em;
-    }
-    
-    .subtituloinicio{
-        font-size: 3vw;
-        
-    }
-    
-    .infovolun{
-        font-size: 1em;
-        margin-top: 15em;
-    }
-
-    .infoong{
-        font-size: 1em;
-        margin-top: 15em;
-    }
-
-}
-
-@media screen and (max-width: 400px) {
-
-    .logoinicio{
-        width: 85%;
-        margin-top: 17em;
-        
-    }
-
-    .seta{
-        width: 10%;
-    }
-
-    .inicio{
-        height: 35em;
-    }
-    
-    .subtituloinicio{
-        font-size: 2.8vw;
-        
-    }
-
-    .infovolun{
-        font-size: 1em;
-        margin-top: 15em;
-    }
-
-    .infoong{
-        font-size: 1em;
-        margin-top: 15em;
-    }
-
-}
